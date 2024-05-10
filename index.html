@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>‎</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; /* This hides any scrollbars */
+    }
+    .hello {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 100%;
+        color: white;
+    }
+
+    #video-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centers the video */
+      width: 100vw; /* Fills the viewport width */
+      height: 100vh; /* Fills the viewport height */
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensures video fills container */
+    }
+  </style>
+</head>
+<body>
+    <h1 class="hello">Hello World!</h1>
+  <div id="video-container">
+    <video autoplay loop muted>
+      <source src="your_video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</body>
+</html>
