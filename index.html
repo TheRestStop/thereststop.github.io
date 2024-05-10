@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Rest Stop </title>
+  <title>TRS.mp4</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: black;
+      background-color: black; /* Added background color */
     }
 
     #video-container {
@@ -30,16 +30,10 @@
 </head>
 <body>
   <div id="video-container">
-    <video id="myVideo" autoplay loop>
+    <video autoplay loop muted>
       <source src="TRS.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-  <script>
-    var video = document.getElementById("myVideo");
-    video.addEventListener("click", function() {
-      video.muted = false; // Unmute the video on user interaction (click)
-    });
-  </script>
 </body>
 </html>
